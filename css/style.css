@@ -18,11 +18,70 @@ h6 {
   overflow: auto;
 }
 
+
+#main {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 250px;
+    border-radius: 5px;
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+    padding: 2em 4em;
+}
+
+#header {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+#header a {
+  display:inline;
+  color: #b5d5e9;
+}
+
+
+#header a:hover {
+    color: #ffeb3b;
+}
+
+
+#role {
+  color: #a9a9a9;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .education-entry,
 .work-entry,
 .project-entry {
   padding: 0 5%;
 }
+
+
+.project-entry {
+    max-width: 40%;
+    display: inline-block;
+}
+
+
+.project-entry a:hover {
+  color: #ff5722;
+}
+
+.education-entry {
+  margin-bottom: 30px;
+}
+
+.education-entry a:hover {
+  color: #ff5722;
+}
+
 
 h1 {
   font-size: 40px;
@@ -113,7 +172,7 @@ a {
 }
 
 .white-text {
-  font-weight: bold;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -164,6 +223,7 @@ ul {
 }
 
 img {
+  max-width: 100%;
   padding: 10px;
 }
 
@@ -173,6 +233,15 @@ span {
 
 #lets-connect {
   text-align: center;
+}
+
+#footerContacts a {
+  display:inline;
+  color: #b5d5e9;
+}
+
+#footerContacts a:hover {
+  color: #ffeb3b;
 }
 
 /* Media queries to handle various device widths */
@@ -215,7 +284,25 @@ span {
 
 @media only screen and (min-width: 750px) {
   #skills-h3,
-  .biopic {
+  .biopic{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .project-entry {
+    display: block;
+    max-width: 100%;
+  }
+  #main {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+    width:100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  #role {
     display: block;
   }
 }
