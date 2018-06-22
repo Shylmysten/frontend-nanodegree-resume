@@ -13,7 +13,7 @@ const dataModule = (function () {
       },
       welcomeMessage: `<em>"If you can dream it, you can build it! - Walt Disney"</em>`,
       skills: ['Adobe FireWorks & Photoshop','HTML5, CSS3, JavaScript, jQuery, React', 'Jasmine & Chrome Dev Tools','Gulp','Git & GitHub','Aria & Accessibility'],
-      biopic: '../images/me.png',
+      biopic: 'images/me.png',
     },
     education: {
       schools: [
@@ -103,35 +103,35 @@ const dataModule = (function () {
           title: 'Pixel Art Maker',
           dates: 'Jan 2018',
           description: `Udacity/Grow with Google Front End Nanodegree Scholarship Project 2 - <strong>Pixel Art Maker</strong>`,
-          images: ['../images/pixel.png', 'url'],
+          images: ['images/pixel.png', 'url'],
           url: 'https://github.com/Shylmysten/Udacity-Front-End-Developer-Projects/tree/master/Project%203%20-%20Pixel%20Art%20Maker'
         },
         {
           title: 'Memory/Solitaire Game',
           dates: 'May 2018',
           description: `Udacity/Grow with Google Front End Nanodegree Scholarship Project 3 - <strong>Memory Match Game</strong>`,
-          images: ['../images/memory.png', 'url'],
+          images: ['images/memory.png', 'url'],
           url: 'https://github.com/Shylmysten/fend-project-memory-game'
         },
         {
           title: 'Frogger Clone',
           dates: 'May 2018',
           description: `Udacity/Grow with Google Front End Nanodegree Scholarship Project 4 - <strong>Frogger Arcade Game Look-a-Like</strong>`,
-          images: ['../images/frogger.png', 'url'],
+          images: ['images/frogger.png', 'url'],
           url: 'https://github.com/Shylmysten/FEND-Arcade-game'
         },
         {
           title: 'Feed Reader Testing With Jasmine',
           dates: 'June 2018',
           description: `Udacity/Grow with Google Front End Nanodegree Scholarship Project 5 - <strong>Testing Rss Feeds with Jasmine</strong><br><br><br><br>`,
-          images: ['../images/feedReadertests.png', 'url'],
+          images: ['images/feedReadertests.png', 'url'],
           url: 'https://github.com/Shylmysten/FEND-Feed-Reader-Testing-Project'
         },
         {
           title: 'Budget App',
           dates: 'Dec 2017',
           description: `A Project from Jonas Schmedtmann's Popular The Complete JavaScript Course 2018: Build Real Projects! on Udemy.com - <strong>Budget App</strong>`,
-          images: ['../images/budget.png', 'url'],
+          images: ['images/budget.png', 'url'],
           url: 'https://shylmysten.github.io/Self_Study_Complete_JavaScript/6-Budgety/'
         }
       ]
