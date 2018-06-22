@@ -1,3 +1,5 @@
+// The dataModule is encapsulates our data so it does not pollute the rest of our site. It can only pass information to the appController through one method, display().
+
 const dataModule = (function () {
   const data = {
     bio: {
@@ -143,6 +145,7 @@ const dataModule = (function () {
   }
 })();
 
+// The UI module controls information to and from the DOM. In this case, it receives data that was first pass from the data module to the appcontroller and then forwarded to the UI Module to be inserted into the DOM
 const UIModule = (function () {
     const buildBio = function (obj) {
       const name = HTMLheaderName.replace('%data%', obj.name);
@@ -292,13 +295,15 @@ const UIModule = (function () {
 
 })();
 
+
+// The appController Module is the Octopus. It acts as a mediary between the UI Module and the Data Module as they don't know each other exist. The appController fetches data from the DataModule and passes it on to the UI Module. In other programs the UI module would fetch information from the DOM, such as User interaction with form fields, and returns it to the appcontroller and then it is forwarded to be stored in the data module
 const appController = (function (dataMdl, UIMdl) {
   const data = dataMdl.display();
   const bio = data.bio;
   const work = data.work;
   const prjx = data.projects;
   const edu = data.education;
-  
+
   UIMdl.render(bio,work,prjx, edu);
 
 })(dataModule, UIModule);
