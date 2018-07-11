@@ -124,7 +124,7 @@ const dataModule = (function () {
           title: 'Feed Reader Testing With Jasmine',
           dates: 'June 2018',
           description: `Udacity/Grow with Google Front End Nanodegree Scholarship Project 5 - <strong>Testing Rss Feeds with Jasmine</strong><br><br><br><br>`,
-          images: ['images/feedReadertests.png', 'url'],
+          images: ['images/feedreadertests.png', 'url'],
           url: 'https://github.com/Shylmysten/FEND-Feed-Reader-Testing-Project'
         },
         {
@@ -234,7 +234,6 @@ const UIModule = (function () {
     };
 
     const buildEducation = function (obj) {
-      console.log(obj);
       $('#education h2').after(HTMLschoolStart);
       obj.schools.forEach(function (cur,i) {
         let name = HTMLschoolName.replace('%data%', cur.name);
